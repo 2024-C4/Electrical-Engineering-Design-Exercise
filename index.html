@@ -7,41 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>献立生成サイト</h1>
-    </header>
-    <main>
-        <form id="menu-form">
-            <label for="religion">宗教:</label>
-            <input type="text" id="religion" name="religion" required><br>
-
-            <label for="allergy">アレルギー:</label>
-            <input type="text" id="allergy" name="allergy" required><br>
-
-            <label for="ingredients">使いたい食材:</label>
-            <input type="text" id="ingredients" name="ingredients" required><br>
-
-            <label for="age">年齢:</label>
-            <input type="number" id="age" name="age" required><br>
-
-            <label for="number">人数:</label>
-            <input type="number" id="number" name="number" required><br>
-
-            <label for="gender">性別:</label>
-            <input type="text" id="gender" name="gender" required><br>
-
-            <label for="genre">ジャンル:</label>
-            <input type="text" id="genre" name="genre" required><br>
-
-            <label for="time">時間:</label>
-            <input type="text" id="time" name="time" required><br>
-
-            <label for="forbidden">禁止食材:</label>
-            <input type="text" id="forbidden" name="forbidden" required><br>
-
-            <button type="button" onclick="generateMenu()">献立生成</button>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- メッセージがここに表示されます -->
+        </div>
+        <form id="menu-form" class="input-form">
+            <input type="text" id="input-message" placeholder="Enter your message here..." autocomplete="off" required>
+            <button type="submit">送信</button>
         </form>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
