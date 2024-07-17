@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     allergyToggle.addEventListener('click', function() {
         if (allergyOptions.style.display === 'none' || allergyOptions.style.display === '') {
             allergyOptions.style.display = 'block';
-            allergyToggle.textContent = 'アレルギー項目を隠す';
+            allergyToggle.textContent = 'アレルギー品目を隠す';
         } else {
             allergyOptions.style.display = 'none';
-            allergyToggle.textContent = 'アレルギー項目を表示';
+            allergyToggle.textContent = 'アレルギー品目を表示';
         }
     });
 
