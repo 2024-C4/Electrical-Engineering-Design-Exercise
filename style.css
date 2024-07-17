@@ -91,7 +91,7 @@ button {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* アレルギー項目を表示ボタンのスタイル */
+/* アレルギー品目を表示ボタンのスタイル */
 #allergy-toggle {
     background-color: #3498db; /* 青色 */
     color: white;
@@ -111,7 +111,7 @@ button[type="button"]:hover {
     background-color: #27ae60; /* ホバー時の濃い緑色 */
 }
 
-/* アレルギーオプションのスタイル */
+/* アレルギー品目のスタイル */
 #allergy-container {
     margin-top: 1em;
 }
