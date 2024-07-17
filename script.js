@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const allergyOptions = document.getElementById('allergy-options');
 
     allergyToggle.addEventListener('click', function() {
-        if (allergyOptions.style.display === 'none') {
+        if (allergyOptions.style.display === 'none' || allergyOptions.style.display === '') {
             allergyOptions.style.display = 'block';
             allergyToggle.textContent = 'アレルギー項目を隠す';
         } else {
