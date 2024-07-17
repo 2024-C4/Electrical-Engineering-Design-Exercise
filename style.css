@@ -126,13 +126,12 @@ button:hover {
 }
 
 #allergy-options label {
-    font-weight: normal;
-    color: #555;
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: normal;
+    color: #555;
     text-align: center;
-    padding: 5px;
 }
 
 #allergy-options input[type="checkbox"] {
