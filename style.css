@@ -129,10 +129,10 @@ button:hover {
     font-weight: normal;
     color: #555;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    white-space: nowrap; /* これで各品目名が横一列に表示されます */
 }
 
 #allergy-options input[type="checkbox"] {
-    margin-right: 10px;
+    margin-top: 5px;
 }
