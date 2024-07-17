@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const time = document.getElementById('time').value;
         const forbidden = document.getElementById('forbidden').value;
 
-        const menuText = `次の要素をふまえて料理の献立と調理方法を教えてください。宗教: ${religion}, アレルギー: ${allergy.join(', ')}, 使いたい食材: ${ingredients}, 年齢: ${age}, 人数: ${number}, 性別: ${gender}, 料理のジャンル: ${genre}, 食事の時間帯: ${time}, 禁止食材: ${forbidden}`;
+        const menuText = `次の要素をふまえて料理の献立と調理方法を教えてください。\n\n宗教: ${religion}\nアレルギー: ${allergy.join(', ')}\n使いたい食材: ${ingredients}\n年齢: ${age}\n人数: ${number}\n性別: ${gender}\n料理のジャンル: ${genre}\n食事の時間帯: ${time}\n禁止食材: ${forbidden}`;
 
         // クリップボードにコピー
         navigator.clipboard.writeText(menuText).then(() => {
@@ -37,7 +37,7 @@ function generateMenu() {
     const time = document.getElementById('time').value;
     const forbidden = document.getElementById('forbidden').value;
 
-    const menuText = `次の要素をふまえて料理の献立と調理方法を教えてください。宗教: ${religion}, アレルギー: ${allergy.join(', ')}, 使いたい食材: ${ingredients}, 年齢: ${age}, 人数: ${number}, 性別: ${gender}, 料理のジャンル: ${genre}, 食事の時間帯: ${time}, 禁止食材: ${forbidden}`;
+    const menuText = `次の要素をふまえて料理の献立と調理方法を教えてください。\n\n宗教: ${religion}\nアレルギー: ${allergy.join(', ')}\n使いたい食材: ${ingredients}\n年齢: ${age}\n人数: ${number}\n性別: ${gender}\n料理のジャンル: ${genre}\n食事の時間帯: ${time}\n禁止食材: ${forbidden}`;
 
     // クリップボードにコピー
     navigator.clipboard.writeText(menuText).then(() => {
