@@ -115,13 +115,19 @@ button:hover {
     margin-bottom: 1em;
 }
 
-#allergy-options .allergy-grid label {
-    font-weight: normal;
-    color: #555;
-}
-
 #allergy-options .allergy-grid-5col {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+}
+
+#allergy-options label {
+    font-weight: normal;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+#allergy-options input[type="checkbox"] {
+    margin-right: 10px;
 }
