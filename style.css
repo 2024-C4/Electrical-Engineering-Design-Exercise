@@ -108,9 +108,20 @@ button:hover {
     color: #20232a;
 }
 
-#allergy-options label {
-    display: block;
-    margin-bottom: 0.5em;
+#allergy-options .allergy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+#allergy-options .allergy-grid label {
     font-weight: normal;
     color: #555;
+}
+
+#allergy-options .allergy-grid-5col {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
 }
