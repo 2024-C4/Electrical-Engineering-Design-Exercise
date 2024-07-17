@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('menu-form');
-    
+    const allergyToggle = document.getElementById('allergy-toggle');
+    const allergyOptions = document.getElementById('allergy-options');
+
+    allergyToggle.addEventListener('click', function() {
+        if (allergyOptions.style.display === 'none') {
+            allergyOptions.style.display = 'block';
+            allergyToggle.textContent = 'アレルギー項目を隠す';
+        } else {
+            allergyOptions.style.display = 'none';
+            allergyToggle.textContent = 'アレルギー項目を表示';
+        }
+    });
+
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // フォームのデフォルトの送信動作を防ぐ
 
