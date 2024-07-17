@@ -137,5 +137,4 @@ button:hover {
 
 #allergy-options input[type="checkbox"] {
     margin-bottom: 5px;
-    transform: scale(1.5); /* チェックボックスを少し大きくして高さを揃える */
 }
