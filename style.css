@@ -102,6 +102,12 @@ button:hover {
     background-color: #f9f9f9;
 }
 
+#allergy-options h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #20232a;
+}
+
 #allergy-options label {
     display: block;
     margin-bottom: 0.5em;
