@@ -108,15 +108,19 @@ button:hover {
     color: #20232a;
 }
 
-#allergy-options .allergy-grid {
+#allergy-options .allergy-grid,
+#allergy-options .allergy-grid-5col {
     display: grid;
+    align-items: center;
+}
+
+#allergy-options .allergy-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-bottom: 1em;
 }
 
 #allergy-options .allergy-grid-5col {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
@@ -126,6 +130,7 @@ button:hover {
     color: #555;
     display: flex;
     align-items: center;
+    white-space: nowrap; /* これで各品目名が横一列に表示されます */
 }
 
 #allergy-options input[type="checkbox"] {
