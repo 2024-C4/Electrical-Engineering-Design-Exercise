@@ -11,36 +11,56 @@
         <h1>献立生成サイト</h1>
     </header>
     <main>
-        <form id="menu-form">
-            <label for="religion">宗教:</label>
-            <input type="text" id="religion" name="religion" required><br>
+        <section class="form-section">
+            <form id="menu-form">
+                <div class="form-group">
+                    <label for="religion">宗教:</label>
+                    <input type="text" id="religion" name="religion" required>
+                </div>
 
-            <label for="allergy">アレルギー:</label>
-            <input type="text" id="allergy" name="allergy" required><br>
+                <div class="form-group">
+                    <label for="allergy">アレルギー:</label>
+                    <input type="text" id="allergy" name="allergy" required>
+                </div>
 
-            <label for="ingredients">使いたい食材:</label>
-            <input type="text" id="ingredients" name="ingredients" required><br>
+                <div class="form-group">
+                    <label for="ingredients">使いたい食材:</label>
+                    <input type="text" id="ingredients" name="ingredients" required>
+                </div>
 
-            <label for="age">年齢:</label>
-            <input type="number" id="age" name="age" required><br>
+                <div class="form-group">
+                    <label for="age">年齢:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
 
-            <label for="number">人数:</label>
-            <input type="number" id="number" name="number" required><br>
+                <div class="form-group">
+                    <label for="number">人数:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
 
-            <label for="gender">性別:</label>
-            <input type="text" id="gender" name="gender" required><br>
+                <div class="form-group">
+                    <label for="gender">性別:</label>
+                    <input type="text" id="gender" name="gender" required>
+                </div>
 
-            <label for="genre">ジャンル:</label>
-            <input type="text" id="genre" name="genre" required><br>
+                <div class="form-group">
+                    <label for="genre">ジャンル:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </div>
 
-            <label for="time">時間:</label>
-            <input type="text" id="time" name="time" required><br>
+                <div class="form-group">
+                    <label for="time">時間:</label>
+                    <input type="text" id="time" name="time" required>
+                </div>
 
-            <label for="forbidden">禁止食材:</label>
-            <input type="text" id="forbidden" name="forbidden" required><br>
+                <div class="form-group">
+                    <label for="forbidden">禁止食材:</label>
+                    <input type="text" id="forbidden" name="forbidden" required>
+                </div>
 
-            <button type="button" onclick="generateMenu()">献立生成</button>
-        </form>
+                <button type="button" onclick="generateMenu()">献立生成</button>
+            </form>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
