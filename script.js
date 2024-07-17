@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('menu-form');
     const allergyToggle = document.getElementById('allergy-toggle');
     const allergyOptions = document.getElementById('allergy-options');
+    const numberInput = document.getElementById('number');
 
     allergyToggle.addEventListener('click', function() {
         if (allergyOptions.style.display === 'none' || allergyOptions.style.display === '') {
@@ -10,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             allergyOptions.style.display = 'none';
             allergyToggle.textContent = 'アレルギー項目を表示';
+        }
+    });
+
+    numberInput.addEventListener('input', function() {
+        if (numberInput.value < 1) {
+            numberInput.value = 1;
         }
     });
 
