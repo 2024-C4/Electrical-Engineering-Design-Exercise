@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // クリップボードにコピー
         navigator.clipboard.writeText(menuText).then(() => {
-            // ChatGPTのURLへ遷移
-            window.location.href = 'https://chat.openai.com/';
+            // 新しいタブでChatGPTのURLを開く
+            window.open('https://chat.openai.com/', '_blank');
         }).catch(err => {
             console.error('クリップボードにコピーできませんでした: ', err);
         });
@@ -41,8 +41,8 @@ function generateMenu() {
 
     // クリップボードにコピー
     navigator.clipboard.writeText(menuText).then(() => {
-        // ChatGPTのURLへ遷移
-        window.location.href = 'https://chat.openai.com/';
+        // 新しいタブでChatGPTのURLを開く
+        window.open('https://chat.openai.com/', '_blank');
     }).catch(err => {
         console.error('クリップボードにコピーできませんでした: ', err);
     });
